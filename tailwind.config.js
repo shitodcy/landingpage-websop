@@ -7,7 +7,8 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                pixel: ['"Press Start 2P"', 'cursive', 'system-ui'],
+                heading: ['"Playfair Display"', 'Georgia', 'serif'],
+                body: ['Inter', 'system-ui', 'sans-serif'],
             },
         },
     },
