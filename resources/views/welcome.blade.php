@@ -6,6 +6,103 @@
     <title>Sop Iga Awawantie — Kelezatan Iga Khas Klaten</title>
     <meta name="description" content="Sop Iga Awawantie — Resep autentik keluarga, kelezatan iga yang khas di Klaten. Nikmati sop iga, iga bakar, iga penyet dengan sajian mulai Rp 20.000.">
     <meta name="keywords" content="sop iga klaten, iga bakar klaten, rumah makan klaten, sop iga awawantie, kuliner klaten">
+    <meta name="author" content="Sop Iga Awawantie">
+    <meta name="theme-color" content="#5B7A3D">
+    <meta name="robots" content="index, follow">
+
+    {{-- Canonical URL --}}
+    <link rel="canonical" href="{{ url('/') }}">
+
+    {{-- Favicon --}}
+    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ asset('images/logo_bersih.webp') }}">
+
+    {{-- Open Graph Meta Tags --}}
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="Sop Iga Awawantie">
+    <meta property="og:title" content="Sop Iga Awawantie — Kelezatan Iga Khas Klaten">
+    <meta property="og:description" content="Resep autentik keluarga, kelezatan iga yang khas di Klaten. Nikmati sop iga, iga bakar, iga penyet dengan sajian mulai Rp 20.000.">
+    <meta property="og:url" content="{{ url('/') }}">
+    <meta property="og:image" content="{{ asset('images/sop_buntut_hero.webp') }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Sop Iga Awawantie - Sajian Sop Iga Khas Klaten">
+
+    {{-- Twitter Card Meta Tags --}}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sop Iga Awawantie — Kelezatan Iga Khas Klaten">
+    <meta name="twitter:description" content="Resep autentik keluarga, kelezatan iga yang khas di Klaten. Nikmati sop iga, iga bakar, iga penyet dengan sajian mulai Rp 20.000.">
+    <meta name="twitter:image" content="{{ asset('images/sop_buntut_hero.webp') }}">
+    <meta name="twitter:image:alt" content="Sop Iga Awawantie - Sajian Sop Iga Khas Klaten">
+
+    {{-- JSON-LD Structured Data: Restaurant --}}
+    <script type="application/ld+json">
+    {!! json_encode([
+        '@context' => 'https://schema.org',
+        '@type' => 'Restaurant',
+        'name' => 'Sop Iga Awawantie',
+        'image' => asset('images/sop_buntut_hero.webp'),
+        'url' => url('/'),
+        'description' => 'Resep autentik keluarga, kelezatan iga yang khas di Klaten. Nikmati sop iga, iga bakar, iga penyet dengan sajian mulai Rp 30.000.',
+        'servesCuisine' => 'Indonesian',
+        'priceRange' => 'Rp 10.000 - Rp 30.000',
+        'address' => [
+            '@type' => 'PostalAddress',
+            'streetAddress' => 'Jl. Ki Pandanaran No.146, Senden, Danguran',
+            'addressLocality' => 'Klaten Selatan',
+            'addressRegion' => 'Jawa Tengah',
+            'postalCode' => '57425',
+            'addressCountry' => 'ID',
+        ],
+        'geo' => [
+            '@type' => 'GeoCoordinates',
+            'latitude' => -7.726068,
+            'longitude' => 110.557489,
+        ],
+        'openingHoursSpecification' => [
+            '@type' => 'OpeningHoursSpecification',
+            'dayOfWeek' => ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+            'opens' => '09:00',
+            'closes' => '21:00',
+        ],
+        'menu' => url('/').'#menu',
+        'hasMenu' => [
+            '@type' => 'Menu',
+            'hasMenuSection' => [
+                [
+                    '@type' => 'MenuSection',
+                    'name' => 'Makanan',
+                    'hasMenuItem' => [
+                        ['@type' => 'MenuItem', 'name' => 'Sop Iga', 'offers' => ['@type' => 'Offer', 'price' => '25000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Iga Bakar', 'offers' => ['@type' => 'Offer', 'price' => '25000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Iga Penyet', 'offers' => ['@type' => 'Offer', 'price' => '20000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Sop Balungan', 'offers' => ['@type' => 'Offer', 'price' => '22000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Sop Buntut', 'offers' => ['@type' => 'Offer', 'price' => '30000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Sop Kaki Sapi', 'offers' => ['@type' => 'Offer', 'price' => '25000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Sop Ikan Nila', 'offers' => ['@type' => 'Offer', 'price' => '22000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Iga Steak', 'offers' => ['@type' => 'Offer', 'price' => '28000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Ayam Goreng', 'offers' => ['@type' => 'Offer', 'price' => '19000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Ayam Bakar', 'offers' => ['@type' => 'Offer', 'price' => '19000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Ayam Kampung', 'offers' => ['@type' => 'Offer', 'price' => '22000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Ikan Nila Bakar', 'offers' => ['@type' => 'Offer', 'price' => '25000', 'priceCurrency' => 'IDR']],
+                    ],
+                ],
+                [
+                    '@type' => 'MenuSection',
+                    'name' => 'Minuman',
+                    'hasMenuItem' => [
+                        ['@type' => 'MenuItem', 'name' => 'Es Teh', 'offers' => ['@type' => 'Offer', 'price' => '5000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Es Jeruk', 'offers' => ['@type' => 'Offer', 'price' => '5000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Es Milo', 'offers' => ['@type' => 'Offer', 'price' => '8000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Teh Hangat', 'offers' => ['@type' => 'Offer', 'price' => '4000', 'priceCurrency' => 'IDR']],
+                        ['@type' => 'MenuItem', 'name' => 'Jeruk Hangat', 'offers' => ['@type' => 'Offer', 'price' => '5000', 'priceCurrency' => 'IDR']],
+                    ],
+                ],
+            ],
+        ],
+    ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) !!}
+    </script>
 
     {{-- Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +114,8 @@
 <body class="font-body antialiased bg-off-white text-gray-800 overflow-x-hidden">
 
     <!--  NAVBAR  -->
-    <nav id="navbar" class="navbar fixed w-full z-50 top-0">
+    <header>
+    <nav id="navbar" class="navbar fixed w-full z-50 top-0" aria-label="Navigasi utama">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 {{-- Logo --}}
@@ -57,8 +155,9 @@
             </div>
         </div>
     </nav>
+    </header>
 
-
+    <main>
     <!-- HERO SECTION -->
     <section id="beranda" class="relative pt-28 pb-16 lg:pt-36 lg:pb-24 bg-cream overflow-hidden">
         {{-- Decorative elements --}}
@@ -94,16 +193,23 @@
                     </div>
                 </div>
 
-                {{-- Hero Image --}}
+                {{-- Hero Image Slideshow --}}
                 <div class="reveal-right relative">
                     <div class="relative z-10 rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl">
-                        <div class="parallax-bg">
-                            <img
-                                src="{{ asset('images/sop_buntut (1).webp') }}"
-                                alt="Sop Iga Awawantie - Sajian Sop Buntut Khas Klaten"
-                                class="w-full h-[350px] sm:h-[450px] lg:h-[520px] object-cover"
-                                loading="eager"
-                            >
+                        <div id="hero-slideshow" class="hero-slideshow">
+                            <img src="{{ asset('images/iga_bakar.webp') }}" alt="Iga Bakar - Menu Andalan Sop Iga Awawantie" class="hero-slide active" loading="eager" fetchpriority="high">
+                            <img src="{{ asset('images/sop_iga.webp') }}" alt="Sop Iga - Sajian Khas Klaten" class="hero-slide" loading="lazy">
+                            <img src="{{ asset('images/sop_balungan.webp') }}" alt="Sop Balungan - Resep Autentik Keluarga" class="hero-slide" loading="lazy">
+                            <img src="{{ asset('images/sop_buntut_hero.webp') }}" alt="Sop Buntut - Kelezatan Premium" class="hero-slide" loading="lazy">
+                            <img src="{{ asset('images/sop_kaki_sapi.webp') }}" alt="Sop Kaki Sapi - Sajian Istimewa" class="hero-slide" loading="lazy">
+                            {{-- Slide indicators --}}
+                            <div class="hero-slide-indicators">
+                                <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+                                <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+                                <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+                                <button class="hero-dot" data-slide="3" aria-label="Slide 4"></button>
+                                <button class="hero-dot" data-slide="4" aria-label="Slide 5"></button>
+                            </div>
                         </div>
                     </div>
                     {{-- Floating decoration --}}
@@ -137,7 +243,7 @@
                     </div>
                     <div class="p-5 text-center">
                         <h3 class="font-heading font-bold text-lg text-dark mb-1">Sop Iga</h3>
-                        <p class="price-tag text-primary font-bold text-lg">Rp25.000</p>
+                        <p class="price-tag text-primary font-bold text-lg">Rp30.000</p>
                     </div>
                 </div>
 
@@ -149,7 +255,7 @@
                     </div>
                     <div class="p-5 text-center">
                         <h3 class="font-heading font-bold text-lg text-dark mb-1">Iga Bakar</h3>
-                        <p class="price-tag text-primary font-bold text-lg">Rp20.000</p>
+                        <p class="price-tag text-primary font-bold text-lg">Rp30.000</p>
                     </div>
                 </div>
 
@@ -161,7 +267,7 @@
                     </div>
                     <div class="p-5 text-center">
                         <h3 class="font-heading font-bold text-lg text-dark mb-1">Iga Penyet</h3>
-                        <p class="price-tag text-primary font-bold text-lg">Rp20.000</p>
+                        <p class="price-tag text-primary font-bold text-lg">Rp32.000</p>
                     </div>
                 </div>
             </div>
@@ -210,7 +316,7 @@
                             </div>
                             <div class="p-3 sm:p-4">
                                 <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Iga Bakar</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp25.000</p>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp30.000</p>
                             </div>
                         </div>
 
@@ -222,7 +328,7 @@
                             </div>
                             <div class="p-3 sm:p-4">
                                 <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Sop Iga</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp25.000</p>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp30.000</p>
                             </div>
                         </div>
 
@@ -234,31 +340,31 @@
                             </div>
                             <div class="p-3 sm:p-4">
                                 <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Sop Balungan</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp22.000</p>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp18.000</p>
                             </div>
                         </div>
 
                         {{-- Item 4: Sop Buntut --}}
                         <div class="reveal stagger-4 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/sop_buntut.webp') }}"
+                                <img src="{{ asset('images/sop_buntut_hero.webp') }}"
                                      alt="Sop Buntut" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
                                 <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Sop Buntut</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp30.000</p>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp38.000</p>
                             </div>
                         </div>
 
                         {{-- Item 5: Sop Kaki Sapi --}}
                         <div class="reveal stagger-5 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/sop_kakisapi.webp') }}"
+                                <img src="{{ asset('images/sop_kaki_sapi.webp') }}"
                                      alt="Sop Kaki Sapi" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
                                 <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Sop Kaki Sapi</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp25.000</p>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp30.000</p>
                             </div>
                         </div>
 
@@ -282,7 +388,7 @@
                             </div>
                             <div class="p-3 sm:p-4">
                                 <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Iga Penyet</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp20.000</p>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp32.000</p>
                             </div>
                         </div>
 
@@ -293,8 +399,8 @@
                                      alt="Iga Steak" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
-                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Iga Steak</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp28.000</p>
+                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Iga Bakar Steak</h4>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp32.000</p>
                             </div>
                         </div>
 
@@ -305,8 +411,8 @@
                                      alt="Ayam Goreng" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
-                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Ayam Goreng</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp19.000</p>
+                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Ayam Goreng Kecil</h4>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp10.000</p>
                             </div>
                         </div>
 
@@ -317,8 +423,8 @@
                                      alt="Ayam Bakar" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
-                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Ayam Bakar</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp19.000</p>
+                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Ayam Bakar Kecil</h4>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp10.000</p>
                             </div>
                         </div>
 
@@ -329,8 +435,8 @@
                                      alt="Ayam Kampung" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
-                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Ayam Kampung</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp22.000</p>
+                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Ayam Goreng Besar</h4>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp20.000</p>
                             </div>
                         </div>
 
@@ -342,7 +448,7 @@
                             </div>
                             <div class="p-3 sm:p-4">
                                 <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Ikan Nila Bakar</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp25.000</p>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp15.000</p>
                             </div>
                         </div>
                     </div>
@@ -364,62 +470,77 @@
                 {{-- Minuman Grid --}}
                 <div class="bg-cream rounded-2xl p-6 lg:p-8 shadow-sm">
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6">
+                        
                         {{-- Minuman 1: Es Teh --}}
                         <div class="reveal stagger-1 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
-                            <div class="img-zoom-wrapper aspect-square">
+                            <div class="img-zoom-wrapper aspect-square relative">
                                 <img src="{{ asset('images/es_teh.webp') }}"
                                      alt="Es Teh" class="img-zoom w-full h-full object-cover" loading="lazy">
+                                <span class="badge-panas">Panas/Dingin</span>
                             </div>
                             <div class="p-3 sm:p-4">
-                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Es Teh</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp5.000</p>
+                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Teh</h4>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp3.000</p>
                             </div>
                         </div>
 
                         {{-- Minuman 2: Es Jeruk --}}
                         <div class="reveal stagger-2 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
-                            <div class="img-zoom-wrapper aspect-square">
+                            <div class="img-zoom-wrapper aspect-square relative">
                                 <img src="{{ asset('images/es_jeruk.webp') }}"
                                      alt="Es Jeruk" class="img-zoom w-full h-full object-cover" loading="lazy">
+                                <span class="badge-panas">Panas/Dingin</span>
                             </div>
                             <div class="p-3 sm:p-4">
-                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Es Jeruk</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp5.000</p>
+                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Jeruk</h4>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp4.000</p>
                             </div>
                         </div>
 
                         {{-- Minuman 3: Es Milo --}}
                         <div class="reveal stagger-3 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
-                            <div class="img-zoom-wrapper aspect-square">
+                            <div class="img-zoom-wrapper aspect-square relative">
                                 <img src="{{ asset('images/es_milo.webp') }}"
-                                     alt="Es Milo" class="img-zoom w-full h-full object-cover" loading="lazy">
+                                     alt="Milo" class="img-zoom w-full h-full object-cover" loading="lazy">
+                                <span class="badge-panas">Panas/Dingin</span>
                             </div>
                             <div class="p-3 sm:p-4">
-                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Es Milo</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp8.000</p>
+                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Milo</h4>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp5.000</p>
                             </div>
                         </div>
 
-                        {{-- Minuman 4: Teh Hangat --}}
-                        <div class="reveal stagger-4 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
-                            <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/teh_hangat.webp') }}"
-                                     alt="Teh Hangat" class="img-zoom w-full h-full object-cover" loading="lazy">
-                            </div>
-                            <div class="p-3 sm:p-4">
-                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Teh Hangat</h4>
-                                <p class="price-tag text-sm sm:text-base mt-1">Rp4.000</p>
-                            </div>
-                        </div>
-
-                        {{-- Minuman 5: Jeruk Hangat --}}
                         <div class="reveal stagger-5 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
-                            <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/jeruk_hangat.webp') }}"
-                                     alt="Jeruk Hangat" class="img-zoom w-full h-full object-cover" loading="lazy">
+                            <div class="img-zoom-wrapper aspect-square relative">
+                                <img src="{{ asset('images/es_sirup.webp') }}"
+                                     alt="Es Sirup" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
-                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Jeruk Hangat</h4>
+                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Es Sirup</h4>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp5.000</p>
+                            </div>
+                        </div>
+
+                        <div class="reveal stagger-6 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
+                            <div class="img-zoom-wrapper aspect-square relative">
+                                <img src="{{ asset('images/chocolatos.webp') }}"
+                                     alt="Chocolatos" class="img-zoom w-full h-full object-cover" loading="lazy">
+                                <span class="badge-panas">Panas/Dingin</span>
+                            </div>
+                            <div class="p-3 sm:p-4">
+                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Chocolatos</h4>
+                                <p class="price-tag text-sm sm:text-base mt-1">Rp5.000</p>
+                            </div>
+                        </div>
+
+                        <div class="reveal stagger-7 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
+                            <div class="img-zoom-wrapper aspect-square relative">
+                                <img src="{{ asset('images/kopi.webp') }}"
+                                     alt="Kopi Hitam" class="img-zoom w-full h-full object-cover" loading="lazy">
+                                <span class="badge-panas">Panas/Dingin</span>
+                            </div>
+                            <div class="p-3 sm:p-4">
+                                <h4 class="font-heading font-semibold text-sm sm:text-base text-dark leading-tight">Kopi Hitam</h4>
                                 <p class="price-tag text-sm sm:text-base mt-1">Rp5.000</p>
                             </div>
                         </div>
@@ -446,12 +567,13 @@
                     <div class="map-container h-[350px] lg:h-[420px]">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21721.72335305433!2d110.55748866629479!3d-7.726068631580709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a45094bb04323%3A0x5a754e31f576377f!2sWARUNG%20SOPIGAAWAWANTIE%20-%20Danguran!5e1!3m2!1sid!2sid!4v1781366721409!5m2!1sid!2sid"
+                            width="100%"
                             height="100%"
                             style="border:0;"
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"
-                            title="Lokasi Sop Iga Awawantie"
+                            title="Lokasi Sop Iga Awawantie di Google Maps - Jl. Ki Pandanaran No.146, Klaten"
                         ></iframe>
                     </div>
                 </div>
@@ -486,7 +608,7 @@
                                     <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                                 </div>
                                 <div>
-                                    <p class="text-sm font-semibold text-dark">09.00 — 21.00</p>
+                                    <p class="text-sm font-semibold text-dark">09.00 — 17.00</p>
                                     <p class="text-xs text-warm-gray">(Setiap Hari)</p>
                                 </div>
                             </div>
@@ -508,27 +630,85 @@
 
 
     <!-- CTA SECTION -->
-    <section id="kontak" class="cta-section py-20 lg:py-28 text-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+    <section id="kontak" class="py-20 lg:py-28 relative bg-[#38412a]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <div class="reveal">
-                <p class="text-primary-light font-medium text-sm uppercase tracking-widest mb-4">Sop Iga Awawantie</p>
-                <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+                <!-- Subtitle -->
+                <div class="flex items-center justify-center gap-3 mb-6">
+                    <div class="w-10 h-px bg-[#a69f83]/50"></div>
+                    <div class="w-1.5 h-1.5 rotate-45 bg-[#a69f83]"></div>
+                    <p class="text-[#a69f83] font-semibold text-xs tracking-[0.2em] uppercase">Pesan Sekarang</p>
+                    <div class="w-1.5 h-1.5 rotate-45 bg-[#a69f83]"></div>
+                    <div class="w-10 h-px bg-[#a69f83]/50"></div>
+                </div>
+
+                <!-- Title -->
+                <h2 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] mb-8 text-[#d4cdb3]">
                     Rumah Makan Keluarga<br>
-                    untuk Semua Momen <span class="text-primary-light">Spesial</span>
+                    untuk Semua Momen Spesial
                 </h2>
-                <p class="text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-                    Tempatnya menikmati masakan rumah yang berbeda dengan yang lain di
-                    Sop Iga Awawantie. Ajak keluarga dan orang tersayang untuk menikmati
-                    kehangatan sajian kami dengan suasana yang nyaman.
+
+                <!-- Description -->
+                <p class="text-[#a69f83] text-base lg:text-lg max-w-3xl mx-auto mb-6 leading-relaxed font-medium">
+                    Dari makan siang keluarga hingga acara kantor besar — kami siap melayani <br class="hidden md:block">
+                    <span class="text-[#d4cdb3] font-semibold">pesanan catering</span> dengan menu lengkap pilihan. Sop Iga, Iga Bakar, dan Iga <br class="hidden md:block">
+                    Penyet tersedia dalam porsi besar untuk kebutuhan Anda.
                 </p>
-                <a href="https://maps.google.com/?q=Klaten+Jawa+Tengah" target="_blank" rel="noopener"
-                   class="btn-primary text-base px-10 py-4">
-                    Datang Langsung
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+
+                <!-- Quote -->
+                <p class="text-[#a69f83]/80 text-sm lg:text-base max-w-2xl mx-auto mb-14 italic">
+                    "Variasi menu kami dirancang untuk memenuhi selera semua kalangan — dari anak-anak hingga orang tua."
+                </p>
+
+                <!-- Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 text-left">
+                    <!-- Card 1 -->
+                    <div class="border border-[#a69f83]/20 bg-white/[0.03] p-8 hover:bg-white/[0.06] transition duration-300">
+                        <h3 class="text-[#d4cdb3] font-bold text-xs tracking-widest uppercase mb-3">Dine-In Nyaman</h3>
+                        <p class="text-[#a69f83] text-sm leading-relaxed">
+                            Suasana warung keluarga yang hangat & ramah.
+                        </p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="border border-[#a69f83]/20 bg-white/[0.03] p-8 hover:bg-white/[0.06] transition duration-300">
+                        <h3 class="text-[#d4cdb3] font-bold text-xs tracking-widest uppercase mb-3">Booking Pesanan</h3>
+                        <p class="text-[#a69f83] text-sm leading-relaxed">
+                            Anda bisa reservasi tempat untuk mendapatkan tempat yang sesuai
+                        </p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="border border-[#a69f83]/20 bg-white/[0.03] p-8 hover:bg-white/[0.06] transition duration-300 flex flex-col">
+                        <h3 class="text-[#d4cdb3] font-bold text-xs tracking-widest uppercase mb-3">Antar Via Ojol</h3>
+                        <p class="text-[#a69f83] text-sm leading-relaxed mb-6">
+                            Tersedia di GoFood, GrabFood dan ShopeeFood
+                        </p>
+                        <!-- Logos centered under text -->
+                        <div class="mt-auto flex items-center justify-center gap-6">
+                            <!-- GoFood -->
+                            <a href="#" aria-label="GoFood" class="text-[#a69f83] hover:text-[#EE2737] transition-colors duration-300">
+                                <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.996 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 11.996 0zm5.666 17.5a6.002 6.002 0 1 1 0-12 6.002 6.002 0 0 1 0 12zm-5.666-3.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg>
+                            </a>
+                            <!-- GrabFood -->
+                            <a href="#" aria-label="GrabFood" class="text-[#a69f83] hover:text-[#00B14F] transition-colors duration-300">
+                                <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.016 0C5.38 0 0 5.38 0 12.016c0 6.634 5.38 12.015 12.016 12.015 6.634 0 12.015-5.38 12.015-12.015C24.031 5.38 18.65 0 12.016 0zm-1.077 17.848c-3.18-.088-5.748-2.616-5.836-5.797-.089-3.23 2.528-5.922 5.836-5.922h3.94v2.793h-3.94c-1.637 0-2.964 1.282-3.042 2.916-.089 1.635 1.151 2.962 2.785 3.04.442.02.884-.04 1.282-.167V12.11l-1.547.05v-2.673h4.482v5.62c-1.15.54-2.52.885-3.96.741z"/></svg>
+                            </a>
+                            <!-- ShopeeFood -->
+                            <a href="#" aria-label="ShopeeFood" class="text-[#a69f83] hover:text-[#EE4D2D] transition-colors duration-300">
+                                <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.905 15.011l-3.257-8.106c-.347-.84-1.22-1.39-2.222-1.39H7.64c-1.001 0-1.874.55-2.221 1.39l-3.258 8.106c-.22.545-.25 1.155-.078 1.733.16.536.495 1.002.949 1.319l8.608 6.007c.217.151.488.151.705 0l8.608-6.007c.454-.317.79-.783.95-1.32.17-.577.14-1.187-.08-1.732h.082zm-7.91-11.23a1.464 1.464 0 1 1-2.928 0 1.464 1.464 0 0 1 2.928 0zm-7.653 10.98c-1.054 0-1.908-.853-1.908-1.907 0-1.054.854-1.907 1.908-1.907 1.053 0 1.907.853 1.907 1.907 0 1.054-.854 1.907-1.907 1.907zm7.653 2.056c-1.054 0-1.908-.853-1.908-1.907 0-1.053.854-1.907 1.908-1.907 1.053 0 1.907.854 1.907 1.907 0 1.054-.854 1.907-1.907 1.907zm7.652-2.056c-1.054 0-1.907-.853-1.907-1.907 0-1.054.853-1.907 1.907-1.907 1.054 0 1.908.853 1.908 1.907 0 1.054-.854 1.907-1.908 1.907z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main WhatsApp CTA Button -->
+                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm tracking-wider uppercase px-8 py-4 rounded-md transition-all duration-300 shadow-[0_4px_14px_0_rgba(37,211,102,0.39)] hover:shadow-[0_6px_20px_rgba(37,211,102,0.23)] hover:-translate-y-1">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                    HUBUNGI VIA WHATSAPP
                 </a>
             </div>
         </div>
     </section>
+    </main>
 
 
     <!-- FOOTER -->
@@ -546,7 +726,7 @@
                         </span>
                     </div>
                     <p class="text-sm text-white/60 leading-relaxed max-w-xs">
-                        Menyajikan kelezatan sop iga dan hidangan khas Jawa Tengah dengan resep autentik keluarga sejak lama.
+                        Menyajikan kelezatan sop iga dengan resep autentik keluarga sejak lama.
                     </p>
                 </div>
 
@@ -580,7 +760,7 @@
             {{-- Divider + Copyright --}}
             <div class="border-t border-white/10 pt-8 text-center">
                 <p class="text-xs text-white/40">
-                    &copy; {{ date('Y') }} Sop Iga Awawantie — Klaten, Jawa Tengah. Hak Cipta Dilindungi.
+                    &copy; {{ date('Y') }} Sop Iga Awawantie.
                 </p>
             </div>
         </div>

@@ -443,10 +443,121 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
 }
 
-/* PARALLAX */
-.parallax-bg {
-  will-change: transform;
-  transition: transform 0.1s linear;
+/* HERO SLIDESHOW */
+.hero-slideshow {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .hero-slideshow { height: 450px; }
+}
+
+@media (min-width: 1024px) {
+  .hero-slideshow { height: 520px; }
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.hero-slide-indicators {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.hero-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.hero-dot:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.hero-dot.active {
+  background: white;
+  border-color: white;
+  transform: scale(1.2);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* DRINK CATEGORY BADGES */
+.badge-dingin,
+.badge-panas {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  z-index: 5;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.badge-dingin {
+  background: rgba(59, 130, 246, 0.85);
+  color: white;
+}
+
+.badge-panas {
+  background: rgba(234, 88, 12, 0.85);
+  color: white;
+}
+
+@media (min-width: 640px) {
+  .badge-dingin,
+  .badge-panas {
+    top: 10px;
+    left: 10px;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+  }
+}
+
+/* CONSISTENT MENU CARD IMAGES */
+.img-zoom-wrapper.aspect-square {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.img-zoom-wrapper.aspect-square .img-zoom {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* CUSTOM SCROLLBAR */
@@ -485,6 +596,87 @@ h1, h2, h3, h4, h5, h6 {
   .reveal-left.active,
   .reveal-right.active {
     transform: translateY(0);
+  }
+}
+
+/* Extra small screens (<375px) */
+@media (max-width: 374px) {
+  .btn-primary,
+  .btn-outline,
+  .btn-green-outline {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.75rem;
+  }
+
+  .tab-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .info-card {
+    padding: 1.25rem;
+  }
+}
+
+/* Touch-friendly interactions */
+button,
+.btn-primary,
+.btn-outline,
+.btn-green-outline,
+.tab-btn {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Safe area insets for notched devices (iPhone X, etc.) */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .navbar {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+
+  .footer-bg {
+    padding-bottom: calc(3.5rem + env(safe-area-inset-bottom));
+  }
+
+  .mobile-menu {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+/* Reduced motion preference for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .card-hover:hover {
+    transform: none;
+  }
+
+  .img-zoom-wrapper:hover .img-zoom,
+  .card-hover:hover .img-zoom {
+    transform: none;
+  }
+
+  .parallax-bg {
+    transition: none;
+  }
+
+  .btn-primary:hover,
+  .btn-outline:hover,
+  .btn-green-outline:hover {
+    transform: none;
+  }
+
+  html {
+    scroll-behavior: auto;
   }
 }
 

@@ -110,22 +110,42 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // PARALLAX EFFECT ON HERO IMAGE
-    const parallaxEl = document.querySelector('.parallax-bg');
-    if (parallaxEl) {
-        let ticking = false;
-        window.addEventListener('scroll', () => {
-            if (!ticking) {
-                window.requestAnimationFrame(() => {
-                    const scrolled = window.scrollY;
-                    if (scrolled < window.innerHeight) {
-                        parallaxEl.style.transform = `translateY(${scrolled * 0.12}px)`;
-                    }
-                    ticking = false;
-                });
-                ticking = true;
-            }
-        }, { passive: true });
+    // HERO IMAGE SLIDESHOW (loops every ~60 seconds = 5 images × 12s each)
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-dot');
+
+    if (slides.length > 1) {
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+        const intervalMs = 5000; // 5 seconds per slide
+
+        const goToSlide = (index) => {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        };
+
+        // Auto advance
+        let autoPlay = setInterval(() => {
+            goToSlide((currentSlide + 1) % totalSlides);
+        }, intervalMs);
+
+        // Dot click navigation
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const slideIndex = parseInt(dot.dataset.slide);
+                if (slideIndex !== currentSlide) {
+                    goToSlide(slideIndex);
+                    // Reset autoplay timer on manual click
+                    clearInterval(autoPlay);
+                    autoPlay = setInterval(() => {
+                        goToSlide((currentSlide + 1) % totalSlides);
+                    }, intervalMs);
+                }
+            });
+        });
     }
 
 
@@ -158,8 +178,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // IMAGE LAZY LOAD FADE-IN
-    const images = document.querySelectorAll('img[loading="lazy"]');
+    // IMAGE LAZY LOAD FADE-IN (exclude hero slides which have their own transition)
+    const images = document.querySelectorAll('img[loading="lazy"]:not(.hero-slide)');
     images.forEach(img => {
         img.style.opacity = '0';
         img.style.transition = 'opacity 0.5s ease';
