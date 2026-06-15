@@ -630,79 +630,52 @@
 
 
     <!-- CTA SECTION -->
-    <section id="kontak" class="py-20 lg:py-28 relative bg-[#38412a]">
+    <section id="kontak" class="cta-section py-20 lg:py-28 text-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <div class="reveal">
-                <!-- Subtitle -->
                 <div class="flex items-center justify-center gap-3 mb-6">
-                    <div class="w-10 h-px bg-[#a69f83]/50"></div>
-                    <div class="w-1.5 h-1.5 rotate-45 bg-[#a69f83]"></div>
-                    <p class="text-[#a69f83] font-semibold text-xs tracking-[0.2em] uppercase">Pesan Sekarang</p>
-                    <div class="w-1.5 h-1.5 rotate-45 bg-[#a69f83]"></div>
-                    <div class="w-10 h-px bg-[#a69f83]/50"></div>
+                    <div class="w-2 h-2 rotate-45 bg-[#b5a38a]"></div>
+                    <p class="text-[#b5a38a] font-medium text-xs sm:text-sm uppercase tracking-[0.25em]">Pesan Sekarang</p>
+                    <div class="w-2 h-2 rotate-45 bg-[#b5a38a]"></div>
                 </div>
-
-                <!-- Title -->
-                <h2 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] mb-8 text-[#d4cdb3]">
+                
+                <h2 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-8 text-[#e6ddc5]">
                     Rumah Makan Keluarga<br>
                     untuk Semua Momen Spesial
                 </h2>
-
-                <!-- Description -->
-                <p class="text-[#a69f83] text-base lg:text-lg max-w-3xl mx-auto mb-6 leading-relaxed font-medium">
-                    Dari makan siang keluarga hingga acara kantor besar — kami siap melayani <br class="hidden md:block">
-                    <span class="text-[#d4cdb3] font-semibold">pesanan catering</span> dengan menu lengkap pilihan. Sop Iga, Iga Bakar, dan Iga <br class="hidden md:block">
+                
+                <p class="text-[#e6ddc5] max-w-3xl mx-auto mb-6 text-base sm:text-lg leading-relaxed">
+                    Dari makan siang keluarga hingga acara kantor besar — kami siap melayani 
+                    <span class="font-bold">pesanan catering</span> dengan menu lengkap pilihan. Sop Iga, Iga Bakar, dan Iga 
                     Penyet tersedia dalam porsi besar untuk kebutuhan Anda.
                 </p>
-
-                <!-- Quote -->
-                <p class="text-[#a69f83]/80 text-sm lg:text-base max-w-2xl mx-auto mb-14 italic">
+                
+                <p class="text-[#b5a38a] italic max-w-2xl mx-auto mb-12 text-sm sm:text-base">
                     "Variasi menu kami dirancang untuk memenuhi selera semua kalangan — dari anak-anak hingga orang tua."
                 </p>
-
-                <!-- Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 text-left">
+                
+                <!-- 3 Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
                     <!-- Card 1 -->
-                    <div class="border border-[#a69f83]/20 bg-white/[0.03] p-8 hover:bg-white/[0.06] transition duration-300">
-                        <h3 class="text-[#d4cdb3] font-bold text-xs tracking-widest uppercase mb-3">Dine-In Nyaman</h3>
-                        <p class="text-[#a69f83] text-sm leading-relaxed">
-                            Suasana warung keluarga yang hangat & ramah.
-                        </p>
+                    <div class="bg-[#ffffff08] border border-white/10 rounded-sm p-6 sm:p-8 text-left backdrop-blur-sm">
+                        <h3 class="text-[#e6ddc5] font-bold text-sm tracking-wider uppercase mb-3">Dine-in Nyaman</h3>
+                        <p class="text-[#b5a38a] text-sm leading-relaxed">Suasana warung keluarga yang hangat & ramah.</p>
                     </div>
                     <!-- Card 2 -->
-                    <div class="border border-[#a69f83]/20 bg-white/[0.03] p-8 hover:bg-white/[0.06] transition duration-300">
-                        <h3 class="text-[#d4cdb3] font-bold text-xs tracking-widest uppercase mb-3">Booking Pesanan</h3>
-                        <p class="text-[#a69f83] text-sm leading-relaxed">
-                            Anda bisa reservasi tempat untuk mendapatkan tempat yang sesuai
-                        </p>
+                    <div class="bg-[#ffffff08] border border-white/10 rounded-sm p-6 sm:p-8 text-left backdrop-blur-sm">
+                        <h3 class="text-[#e6ddc5] font-bold text-sm tracking-wider uppercase mb-3">Booking Pesanan</h3>
+                        <p class="text-[#b5a38a] text-sm leading-relaxed">Anda bisa reservasi tempat untuk mendapatkan tempat yang sesuai</p>
                     </div>
                     <!-- Card 3 -->
-                    <div class="border border-[#a69f83]/20 bg-white/[0.03] p-8 hover:bg-white/[0.06] transition duration-300 flex flex-col">
-                        <h3 class="text-[#d4cdb3] font-bold text-xs tracking-widest uppercase mb-3">Antar Via Ojol</h3>
-                        <p class="text-[#a69f83] text-sm leading-relaxed mb-6">
-                            Tersedia di GoFood, GrabFood dan ShopeeFood
-                        </p>
-                        <!-- Logos centered under text -->
-                        <div class="mt-auto flex items-center justify-center gap-6">
-                            <!-- GoFood -->
-                            <a href="#" aria-label="GoFood" class="text-[#a69f83] hover:text-[#EE2737] transition-colors duration-300">
-                                <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.996 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 11.996 0zm5.666 17.5a6.002 6.002 0 1 1 0-12 6.002 6.002 0 0 1 0 12zm-5.666-3.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg>
-                            </a>
-                            <!-- GrabFood -->
-                            <a href="#" aria-label="GrabFood" class="text-[#a69f83] hover:text-[#00B14F] transition-colors duration-300">
-                                <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.016 0C5.38 0 0 5.38 0 12.016c0 6.634 5.38 12.015 12.016 12.015 6.634 0 12.015-5.38 12.015-12.015C24.031 5.38 18.65 0 12.016 0zm-1.077 17.848c-3.18-.088-5.748-2.616-5.836-5.797-.089-3.23 2.528-5.922 5.836-5.922h3.94v2.793h-3.94c-1.637 0-2.964 1.282-3.042 2.916-.089 1.635 1.151 2.962 2.785 3.04.442.02.884-.04 1.282-.167V12.11l-1.547.05v-2.673h4.482v5.62c-1.15.54-2.52.885-3.96.741z"/></svg>
-                            </a>
-                            <!-- ShopeeFood -->
-                            <a href="#" aria-label="ShopeeFood" class="text-[#a69f83] hover:text-[#EE4D2D] transition-colors duration-300">
-                                <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.905 15.011l-3.257-8.106c-.347-.84-1.22-1.39-2.222-1.39H7.64c-1.001 0-1.874.55-2.221 1.39l-3.258 8.106c-.22.545-.25 1.155-.078 1.733.16.536.495 1.002.949 1.319l8.608 6.007c.217.151.488.151.705 0l8.608-6.007c.454-.317.79-.783.95-1.32.17-.577.14-1.187-.08-1.732h.082zm-7.91-11.23a1.464 1.464 0 1 1-2.928 0 1.464 1.464 0 0 1 2.928 0zm-7.653 10.98c-1.054 0-1.908-.853-1.908-1.907 0-1.054.854-1.907 1.908-1.907 1.053 0 1.907.853 1.907 1.907 0 1.054-.854 1.907-1.907 1.907zm7.653 2.056c-1.054 0-1.908-.853-1.908-1.907 0-1.053.854-1.907 1.908-1.907 1.053 0 1.907.854 1.907 1.907 0 1.054-.854 1.907-1.907 1.907zm7.652-2.056c-1.054 0-1.907-.853-1.907-1.907 0-1.054.853-1.907 1.907-1.907 1.054 0 1.908.853 1.908 1.907 0 1.054-.854 1.907-1.908 1.907z"/></svg>
-                            </a>
-                        </div>
+                    <div class="bg-[#ffffff08] border border-white/10 rounded-sm p-6 sm:p-8 text-left backdrop-blur-sm">
+                        <h3 class="text-[#e6ddc5] font-bold text-sm tracking-wider uppercase mb-3">Antar via Ojol</h3>
+                        <p class="text-[#b5a38a] text-sm leading-relaxed">Tersedia di GoFood, GrabFood dan ShopeeFood</p>
                     </div>
                 </div>
 
-                <!-- Main WhatsApp CTA Button -->
-                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm tracking-wider uppercase px-8 py-4 rounded-md transition-all duration-300 shadow-[0_4px_14px_0_rgba(37,211,102,0.39)] hover:shadow-[0_6px_20px_rgba(37,211,102,0.23)] hover:-translate-y-1">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebd5a] text-white font-bold text-sm sm:text-base px-8 py-4 rounded-sm transition-all border-b-4 border-[#1b9a4b] active:border-b-0 active:translate-y-1">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
                     HUBUNGI VIA WHATSAPP
                 </a>
             </div>
@@ -712,56 +685,66 @@
 
 
     <!-- FOOTER -->
-    <footer class="footer-bg text-white/80 py-14">
+    <footer class="footer-bg text-white/80 py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
-                {{-- Brand --}}
-                <div>
-                    <div class="flex items-center gap-3 mb-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16">
+                {{-- Brand & Copyright --}}
+                <div class="flex flex-col h-full">
+                    <div class="flex items-center gap-3 mb-6">
                         <img src="{{ asset('images/logo_bersih.webp') }}"
                              alt="Logo Sop Iga Awawantie"
-                             class="w-10 h-10 rounded-full object-cover">
-                        <span class="font-heading font-bold text-lg text-white">
+                             class="w-12 h-12 rounded-full object-cover">
+                        <span class="font-heading font-bold text-xl text-white tracking-wide">
                             SOP IGA <span class="text-primary-light">AWAWANTIE</span>
                         </span>
                     </div>
-                    <p class="text-sm text-white/60 leading-relaxed max-w-xs">
+                    <p class="text-[15px] text-white/60 leading-relaxed mb-16">
                         Menyajikan kelezatan sop iga dengan resep autentik keluarga sejak lama.
                     </p>
+                    
+                    <div class="mt-auto border-t border-white/10 pt-6">
+                        <p class="text-sm text-white/40">
+                            &copy; 2026 Sop Iga Awawantie.
+                        </p>
+                    </div>
                 </div>
 
                 {{-- Quick Links --}}
-                <div>
-                    <h4 class="font-heading font-bold text-white text-base mb-4">Navigasi</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#beranda" class="text-sm text-white/60 hover:text-primary-light transition">Home</a></li>
-                        <li><a href="#menu" class="text-sm text-white/60 hover:text-primary-light transition">Menu</a></li>
-                        <li><a href="#lokasi" class="text-sm text-white/60 hover:text-primary-light transition">Lokasi</a></li>
-                        <li><a href="#kontak" class="text-sm text-white/60 hover:text-primary-light transition">Kontak</a></li>
+                <div class="lg:pl-8">
+                    <h4 class="font-heading font-semibold text-white text-xl mb-5 tracking-wide">Navigasi</h4>
+                    <ul class="grid grid-cols-2 gap-x-8 gap-y-3">
+                        <li><a href="#beranda" class="text-[15px] text-white/60 hover:text-white transition">Home</a></li>
+                        <li><a href="#lokasi" class="text-[15px] text-white/60 hover:text-white transition">Lokasi</a></li>
+                        <li><a href="#menu" class="text-[15px] text-white/60 hover:text-white transition">Menu</a></li>
+                        <li><a href="#kontak" class="text-[15px] text-white/60 hover:text-white transition">Kontak</a></li>
                     </ul>
                 </div>
 
-                {{-- Contact Info --}}
-                <div>
-                    <h4 class="font-heading font-bold text-white text-base mb-4">Hubungi Kami</h4>
+                {{-- Lokasi --}}
+                <div class="lg:pl-4">
+                    <h4 class="font-heading font-semibold text-white text-xl mb-5 tracking-wide">Lokasi</h4>
                     <ul class="space-y-3">
-                        <li class="flex items-start gap-2 text-sm text-white/60">
-                            <svg class="w-4 h-4 text-primary-light flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                            Jl. Pandanaran No. 163, Klaten
+                        <li class="flex items-start gap-4 text-[15px] text-white/60 leading-relaxed">
+                            <svg class="w-5 h-5 text-primary-light flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            <span>Jl. Pandanaran No. 163, Klaten</span>
                         </li>
-                        <li class="flex items-center gap-2 text-sm text-white/60">
-                            <svg class="w-4 h-4 text-primary-light flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            09.00 — 21.00 Setiap Hari
+                        <li class="flex items-start gap-4 text-[15px] text-white/60 leading-relaxed">
+                            <svg class="w-5 h-5 text-primary-light flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            <span>09.00 — 21.00 Setiap Hari</span>
                         </li>
                     </ul>
                 </div>
-            </div>
 
-            {{-- Divider + Copyright --}}
-            <div class="border-t border-white/10 pt-8 text-center">
-                <p class="text-xs text-white/40">
-                    &copy; {{ date('Y') }} Sop Iga Awawantie.
-                </p>
+                {{-- Hubungi Kami --}}
+                <div>
+                    <h4 class="font-heading font-semibold text-white text-xl mb-5 tracking-wide">Hubungi Kami</h4>
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="inline-flex items-center gap-4 text-[15px] text-white/80 hover:text-[#25D366] transition-colors group">
+                        <div class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-[#25D366] transition-colors">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                        </div>
+                        <span>Chat WhatsApp</span>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
