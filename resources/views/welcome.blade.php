@@ -14,8 +14,7 @@
     <link rel="canonical" href="{{ url('/') }}">
 
     {{-- Favicon --}}
-    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
-    <link rel="apple-touch-icon" href="{{ asset('images/logo_bersih.webp') }}">
+
 
     {{-- Open Graph Meta Tags --}}
     <meta property="og:type" content="website">
@@ -24,7 +23,7 @@
     <meta property="og:title" content="Sop Iga Awawantie — Kelezatan Iga Khas Klaten">
     <meta property="og:description" content="Resep autentik keluarga, kelezatan iga yang khas di Klaten. Nikmati sop iga, iga bakar, iga penyet dengan sajian mulai Rp 20.000.">
     <meta property="og:url" content="{{ url('/') }}">
-    <meta property="og:image" content="{{ asset('images/sop_buntut_hero.webp') }}">
+    <link rel="icon" href="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534629/logo_bersih_ftedg9.webp" type="image/x-icon">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Sop Iga Awawantie - Sajian Sop Iga Khas Klaten">
@@ -33,7 +32,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sop Iga Awawantie — Kelezatan Iga Khas Klaten">
     <meta name="twitter:description" content="Resep autentik keluarga, kelezatan iga yang khas di Klaten. Nikmati sop iga, iga bakar, iga penyet dengan sajian mulai Rp 20.000.">
-    <meta name="twitter:image" content="{{ asset('images/sop_buntut_hero.webp') }}">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534631/sop_buntut_hero_ykqehm.webp">
     <meta name="twitter:image:alt" content="Sop Iga Awawantie - Sajian Sop Iga Khas Klaten">
 
     {{-- JSON-LD Structured Data: Restaurant --}}
@@ -42,7 +41,7 @@
         '@context' => 'https://schema.org',
         '@type' => 'Restaurant',
         'name' => 'Sop Iga Awawantie',
-        'image' => asset('images/sop_buntut_hero.webp'),
+        'image' => 'https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534631/sop_buntut_hero_ykqehm.webp',
         'url' => url('/'),
         'description' => 'Resep autentik keluarga, kelezatan iga yang khas di Klaten. Nikmati sop iga, iga bakar, iga penyet dengan sajian mulai Rp 30.000.',
         'servesCuisine' => 'Indonesian',
@@ -120,7 +119,7 @@
             <div class="flex justify-between h-20 items-center">
                 {{-- Logo --}}
                 <a href="#beranda" class="flex items-center gap-3 group">
-                    <img src="{{ asset('images/logo_bersih.webp') }}"
+                    <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534629/logo_bersih_ftedg9.webp"
                          alt="Logo Sop Iga Awawantie"
                          class="w-10 h-10 rounded-full object-cover shadow-md group-hover:scale-110 transition-transform">
                     <span class="font-heading font-bold text-lg tracking-tight text-dark">
@@ -197,11 +196,11 @@
                 <div class="reveal-right relative">
                     <div class="relative z-10 rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl">
                         <div id="hero-slideshow" class="hero-slideshow">
-                            <img src="{{ asset('images/iga_bakar.webp') }}" alt="Iga Bakar - Menu Andalan Sop Iga Awawantie" class="hero-slide active" loading="eager" fetchpriority="high">
-                            <img src="{{ asset('images/sop_iga.webp') }}" alt="Sop Iga - Sajian Khas Klaten" class="hero-slide" loading="lazy">
-                            <img src="{{ asset('images/sop_balungan.webp') }}" alt="Sop Balungan - Resep Autentik Keluarga" class="hero-slide" loading="lazy">
-                            <img src="{{ asset('images/sop_buntut_hero.webp') }}" alt="Sop Buntut - Kelezatan Premium" class="hero-slide" loading="lazy">
-                            <img src="{{ asset('images/sop_kaki_sapi.webp') }}" alt="Sop Kaki Sapi - Sajian Istimewa" class="hero-slide" loading="lazy">
+                            <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534626/iga_bakar_ligetc.webp" alt="Iga Bakar - Menu Andalan Sop Iga Awawantie" class="hero-slide active" loading="eager" fetchpriority="high">
+                            <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534631/sop_iga_duxfnl.webp" alt="Sop Iga - Sajian Khas Klaten" class="hero-slide" loading="lazy">
+                            <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534631/sop_balungan_hmlufi.webp" alt="Sop Balungan - Resep Autentik Keluarga" class="hero-slide" loading="lazy">
+                            <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534631/sop_buntut_hero_ykqehm.webp" alt="Sop Buntut - Kelezatan Premium" class="hero-slide" loading="lazy">
+                            <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534632/sop_kaki_sapi_oz2dpd.webp" alt="Sop Kaki Sapi - Sajian Istimewa" class="hero-slide" loading="lazy">
                             {{-- Slide indicators --}}
                             <div class="hero-slide-indicators">
                                 <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
@@ -238,7 +237,7 @@
                 {{-- Sop Iga --}}
                 <div class="reveal stagger-1 card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100/60">
                     <div class="img-zoom-wrapper aspect-[4/3]">
-                        <img src="{{ asset('images/sop_iga.webp') }}"
+                        <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534631/sop_iga_duxfnl.webp"
                              alt="Sop Iga" class="img-zoom w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-5 text-center">
@@ -250,7 +249,7 @@
                 {{-- Iga Bakar --}}
                 <div class="reveal stagger-2 card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100/60">
                     <div class="img-zoom-wrapper aspect-[4/3]">
-                        <img src="{{ asset('images/iga_bakar.webp') }}"
+                        <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534626/iga_bakar_ligetc.webp"
                              alt="Iga Bakar" class="img-zoom w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-5 text-center">
@@ -262,7 +261,7 @@
                 {{-- Iga Penyet --}}
                 <div class="reveal stagger-3 card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100/60">
                     <div class="img-zoom-wrapper aspect-[4/3]">
-                        <img src="{{ asset('images/iga_penyet.webp') }}"
+                        <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534628/iga_penyet_zisiza.webp"
                              alt="Iga Penyet" class="img-zoom w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-5 text-center">
@@ -311,7 +310,7 @@
                         {{-- Item 1: Iga Bakar --}}
                         <div class="reveal stagger-1 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/iga_bakar.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534626/iga_bakar_ligetc.webp"
                                      alt="Iga Bakar" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
@@ -323,7 +322,7 @@
                         {{-- Item 2: Sop Iga --}}
                         <div class="reveal stagger-2 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/sop_iga.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534631/sop_iga_duxfnl.webp"
                                      alt="Sop Iga" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
@@ -335,7 +334,7 @@
                         {{-- Item 3: Sop Balungan --}}
                         <div class="reveal stagger-3 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/sop_balungan.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534631/sop_balungan_hmlufi.webp"
                                      alt="Sop Balungan" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
@@ -347,7 +346,7 @@
                         {{-- Item 4: Sop Buntut --}}
                         <div class="reveal stagger-4 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/sop_buntut_hero.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534631/sop_buntut_hero_ykqehm.webp"
                                      alt="Sop Buntut" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
@@ -359,7 +358,7 @@
                         {{-- Item 5: Sop Kaki Sapi --}}
                         <div class="reveal stagger-5 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/sop_kaki_sapi.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534632/sop_kaki_sapi_oz2dpd.webp"
                                      alt="Sop Kaki Sapi" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
@@ -371,7 +370,7 @@
                         {{-- Item 6: Sop Ikan Nila --}}
                         <div class="reveal stagger-6 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/sop_ikannila.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534633/sop_ikannila_eh5lpl.webp"
                                      alt="Sop Ikan Nila" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
@@ -383,7 +382,7 @@
                         {{-- Item 7: Iga Penyet --}}
                         <div class="reveal stagger-7 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/iga_penyet.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534628/iga_penyet_zisiza.webp"
                                      alt="Iga Penyet" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
@@ -395,7 +394,7 @@
                         {{-- Item 8: Iga Steak --}}
                         <div class="reveal stagger-8 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/iga_steak.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534628/iga_steak_dtzny9.webp"
                                      alt="Iga Steak" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
@@ -407,7 +406,7 @@
                         {{-- Item 9: Ayam Goreng --}}
                         <div class="reveal stagger-1 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/ayam_goreng.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534625/ayam_goreng_cmfmgf.webp"
                                      alt="Ayam Goreng" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
@@ -419,7 +418,7 @@
                         {{-- Item 10: Ayam Bakar --}}
                         <div class="reveal stagger-2 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/ayam_bakar.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534625/ayam_bakar_p3dvch.webp"
                                      alt="Ayam Bakar" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
@@ -431,7 +430,7 @@
                         {{-- Item 11: Ayam Kampung --}}
                         <div class="reveal stagger-3 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/ayam_kampung.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534626/ayam_kampung_cby6cz.webp"
                                      alt="Ayam Kampung" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
@@ -443,7 +442,7 @@
                         {{-- Item 12: Ikan Nila Bakar --}}
                         <div class="reveal stagger-4 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square">
-                                <img src="{{ asset('images/Ikannila_bakar.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534628/Ikannila_bakar_vrjhop.webp"
                                      alt="Ikan Nila Bakar" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
@@ -474,7 +473,7 @@
                         {{-- Minuman 1: Es Teh --}}
                         <div class="reveal stagger-1 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square relative">
-                                <img src="{{ asset('images/es_teh.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534626/es_teh_oyojjp.webp"
                                      alt="Es Teh" class="img-zoom w-full h-full object-cover" loading="lazy">
                                 <span class="badge-panas">Panas/Dingin</span>
                             </div>
@@ -487,7 +486,7 @@
                         {{-- Minuman 2: Es Jeruk --}}
                         <div class="reveal stagger-2 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square relative">
-                                <img src="{{ asset('images/es_jeruk.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534625/es_jeruk_aos26e.webp"
                                      alt="Es Jeruk" class="img-zoom w-full h-full object-cover" loading="lazy">
                                 <span class="badge-panas">Panas/Dingin</span>
                             </div>
@@ -500,7 +499,7 @@
                         {{-- Minuman 3: Es Milo --}}
                         <div class="reveal stagger-3 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square relative">
-                                <img src="{{ asset('images/es_milo.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534626/es_milo_nc0w3r.webp"
                                      alt="Milo" class="img-zoom w-full h-full object-cover" loading="lazy">
                                 <span class="badge-panas">Panas/Dingin</span>
                             </div>
@@ -512,7 +511,7 @@
 
                         <div class="reveal stagger-5 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square relative">
-                                <img src="{{ asset('images/es_sirup.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534626/es_sirup_watsd4.webp"
                                      alt="Es Sirup" class="img-zoom w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="p-3 sm:p-4">
@@ -523,7 +522,7 @@
 
                         <div class="reveal stagger-6 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square relative">
-                                <img src="{{ asset('images/chocolatos.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534625/chocolatos_xw1ql1.webp"
                                      alt="Chocolatos" class="img-zoom w-full h-full object-cover" loading="lazy">
                                 <span class="badge-panas">Panas/Dingin</span>
                             </div>
@@ -535,7 +534,7 @@
 
                         <div class="reveal stagger-7 card-hover bg-white rounded-xl overflow-hidden shadow-sm">
                             <div class="img-zoom-wrapper aspect-square relative">
-                                <img src="{{ asset('images/kopi.webp') }}"
+                                <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534628/kopi_hsmjak.webp"
                                      alt="Kopi Hitam" class="img-zoom w-full h-full object-cover" loading="lazy">
                                 <span class="badge-panas">Panas/Dingin</span>
                             </div>
@@ -691,7 +690,7 @@
                 {{-- Brand & Copyright --}}
                 <div class="flex flex-col h-full">
                     <div class="flex items-center gap-3 mb-6">
-                        <img src="{{ asset('images/logo_bersih.webp') }}"
+                        <img src="https://res.cloudinary.com/dbdmqec1q/image/upload/v1781534629/logo_bersih_ftedg9.webp"
                              alt="Logo Sop Iga Awawantie"
                              class="w-12 h-12 rounded-full object-cover">
                         <span class="font-heading font-bold text-xl text-white tracking-wide">
